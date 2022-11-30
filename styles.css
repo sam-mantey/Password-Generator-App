@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #1F2937;
+}
+.area {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1F2937;
+}
+.area-content {
+    height: fit-content;
+    width: 70%;
+    /*border: white solid 1px;*/
+}
+h1 {
+    font-family: 'Karla';
+    font-weight: 800;
+    font-size: 40px;
+    color: #eeeeee;
+    line-height: 40px;
+}
+.break {
+    display: block;
+    color: #4ADF86;
+}
+
+p {
+    font-family: "Inter", "Sans-serif";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #D5D4D8;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+button {
+    border: none;
+    outline: none;
+}
+
+.generate {
+    height: 48px;
+    width: 191px;
+    background: #10B981;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 35px;
+    display: block;
+    margin-top: 35px;
+}
+.btns  button{
+    width: 160px;
+    height: 39px;
+    background: #273549;
+    border-radius: 6px;
+    margin-bottom: 35px;
+    color: #55F991;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+}
+.btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.bar {
+    border: 1px solid #2F3E53;
+    margin-bottom: 35px;
+}
+button:hover {
+    cursor: pointer;
+}
+.len-input {
+    font-size: 18px;
+    font-family: "Inter", "Sans-serif";
+    font-weight: 400;
+    line-height: 28px;
+    color: #D5D4D8;
+}
+.len-input .input-range {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.length-prompt {
+    display: flex;
+    justify-content: space-between;
+}
+.settings {
+    font-weight: 600;
+    font-size: 25px;
+    font-family: "Karla";
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+.options {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 0;
+    color: #eeeeee;
+    font-size: 18px;
+    line-height: 48px;
+    font-weight: 500;
+    font-family: 'Inter';
+}
+
+.pass-settings {
+    margin-bottom: 40px;
+    
+}
+.options .option {
+    width: calc(100%);
+}
+
+.option input {
+    height: 16px; 
+    width: 20px;
+    outline: none;
+    border: none;
+}
+
+
+@media (min-width: 500px) {
+    .btns  button{
+        width: 170px;
+    }
+    .btns {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .area-content {
+        width: 70%;
+        /*border: white solid 1px;*/
+    }
+    .options {
+        flex-direction: row;
+    }
+    .options .option {
+        width: calc(100% / 2);
+    }
+}
+@media(min-width: 550px) {
+    .btns  button{
+        width: 190px;
+    }
+}
+@media (min-width: 680px) {
+    .bar {
+        width: 456px;
+    }
+    .area-content {
+        width: 456px;
+    }
+    .btns {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .btns  button{
+        width: 211px;
+    }
+}

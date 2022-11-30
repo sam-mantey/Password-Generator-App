@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Password Generator App</title>
+</head>
+<body>
+    <div class="area">
+        <div class="area-content">
+            <main>
+                <h1>Generate a <span class="break">random passsword</span></h1>
+                <p>Never use an insecure passsword again</p>
+            </main>
+            <label for="length-input" class="len-input" >
+                <div class="length-prompt">
+                    Passsword length: <span id="length-select">8</span>
+                </div>
+                <input type="range" class="input-range" id="length-input" min="4" max="15" step="1" value="">
+            </label>
+            <p class="settings">Password Settings</p>
+            <section class="pass-settingsd">
+                <ul class="options">
+                    <li class="option">
+                      <label for="lowercase">
+                        <input type="checkbox" id="lowercase" checked>
+                        Lowercase (a-z)
+                      </label>
+                    </li>
+                    <li class="option">
+                      <label for="uppercase">
+                        <input type="checkbox" id="uppercase">
+                        Uppercase (A-Z)
+                      </label>
+                    </li>
+                    <li class="option">
+                      <label for="numbers">
+                        <input type="checkbox" id="numbers">
+                        Numbers (0-9)
+                      </label>
+                    </li>
+                    <li class="option">
+                      
+                      <label for="symbols">
+                        <input type="checkbox" id="symbols">
+                        Symbols (!-$^+)
+                      </label>
+                    </li>
+            </section>
+            <button class="generate" onclick="generator()">Generate passswords</button>
+
+            <div class="bar"></div>
+            <section>
+                <section class="btns">
+                    <button id="password1"></button>
+                    <button id="password2"></button>
+                </section>
+                
+        </div>
+    </div>
+    </section>
+</body>
+<script src="index.js"></script>
+</html>
